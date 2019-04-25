@@ -16,4 +16,11 @@ public class ProductoService {
         return (List<ProductoEntity>) this.productoRepository.findAll();
     }
     
+    public ProductoEntity createProducto(ProductoEntity producto) {
+        return this.productoRepository.save(producto);
+    }
+    
+    public ProductoEntity updateProducto(ProductoEntity producto) {
+        return this.productoRepository.save(producto);        
+    }
 }
